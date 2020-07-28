@@ -1,0 +1,26 @@
+<h3 mat-dialog-title>Tambah Daftar Pengunjung</h3>
+<div mat-dialog-content>
+  <mat-form-field style="width: 100%;">
+    <mat-label>Nama</mat-label>
+    <input matInput  [(ngModel)]="data.Nama">
+  </mat-form-field>
+
+  <mat-form-field style="width: 100%;">
+    <mat-label>Alamat</mat-label>
+    <input matInput  [(ngModel)]="data.Asal">
+  </mat-form-field>
+
+  <mat-form-field style="width: 100%;">
+    <mat-label>Tanggal Kunjungan</mat-label>
+    <input matInput  [(ngModel)]="data.tgl">
+  </mat-form-field>
+  <mat-form-field style="width: 100%;">
+    <mat-label>Nomor Hp</mat-label>
+    <input matInput  [(ngModel)]="data.Nohp">
+  </mat-form-field>
+</div>
+<mat-dialog-actions>
+  <span class="spacer"></span>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="primary" (click)="simpan(data)">Save</button>
+</mat-dialog-actions>
